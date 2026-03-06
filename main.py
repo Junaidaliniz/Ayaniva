@@ -281,7 +281,7 @@ def build_group_message(otp, counter):
     text += f"<blockquote>{svc_icon} Service: {otp['sender']}</blockquote>\n"
     text += f"<blockquote>\U0001f4de Number: {masked}</blockquote>\n"
     if otp_code:
-        text += f"<blockquote>🔑 OTP: <code>{otp}</code></blockquote>\n"
+        text += f"<blockquote>\U0001f511 OTP: {otp_code}</blockquote>\n"
     text += f"\n<blockquote>\U0001f4e9 Full Message:</blockquote>\n"
     text += f"<pre>{otp['message']}</pre>\n\n"
     text += f"<b>Powered By Ahmad H</b> 💗"
